@@ -1,0 +1,13 @@
+extends header
+
+block content
+    div.container
+        header
+            div.chart-title.info #{title}
+        main.chart-section
+            div.chart-container
+                canvas#chartCanvas
+            div.legend-container
+                div.chart-title Структура потребительской корзины
+                ul#chartLegend
+    script(src="/js/chart-setup.bundle.js")

@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "watch": ["app", "public", "css", "js"],
+  "ext": "js json css pug",
+  "ignore": ["node_modules"]
+}

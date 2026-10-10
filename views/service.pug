@@ -1,0 +1,11 @@
+extends header
+
+block content
+    div.container.bgr
+        div.spinner-container
+            div.spinner.spinner-green.spinner-big
+        form#serviceForm.select-container(method="POST", action="/api/store")
+            h2 Выберите сервис
+            select.select-item(name="chart")
+            button#confirm.btn-green("disabled", type="submit") Подтвердить
+    script(src="/js/select.js", defer)

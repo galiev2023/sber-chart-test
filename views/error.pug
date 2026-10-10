@@ -1,0 +1,10 @@
+extends header
+
+block content
+  h1= message||'Сообщение об ошибке'
+  if error
+    h2= error.status
+    pre #{error.stack}
+  else
+    h2 Статус ошибки
+    pre Стек вызовов

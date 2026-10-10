@@ -1,0 +1,18 @@
+extends header
+
+block content
+  div.container.bgr
+    div.login-panel
+      h2 Войти в панель
+      form#loginForm(method="POST", action="/login")
+        div.form-group
+          input#login(type="text", name="login", placeholder=" ", required)
+          label(for="login") Логин
+        div.form-group
+          input#password(type="password", name="password", placeholder=" ", required)
+          label(for="password") Пароль
+        div.status Логин или пароль неверны.
+        button#loginButton.btn-green(type="submit")
+          span.spinner(aria-hidden="true")
+          span.login-btn-text Войти
+  script(src="/js/auth.js", defer)

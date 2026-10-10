@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <div class="modal-backdrop" id="modalBackdrop">
+      <div class="modal" id="customModal">
+        <div class="modal-content"><span class="close-btn modal-close">&times;</span>
+          <div class="modal-header">
+            <div class="modal-header-text">Внимание</div>
+          </div>
+          <div class="modal-body">Вы выходите из авторизованного профиля, вы будете перенаправлены на страницу авторизации.</div>
+          <div class="modal-footer">
+            <button class="btn-std modal-close">Отмена</button>
+            <button class="btn-red" id="logout">Выйти</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-top">
+      <div class="menu-container">
+        <div class="menu-logo"><img src="/img/logo.png" alt=""></div>
+        <div class="menu-login">
+        </div>
+      </div>
+    </div>
+    <h1>Сообщение об ошибке</h1>
+    <h2>Статус ошибки</h2>
+    <pre>Стек вызовов</pre>
+    <script src="/js/modal.js"></script>
+    <script src="/js/logout.js"></script>
+  </body>
+</html>
